@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Genrator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="pass-container">
+            <div class="header">
+                <i class="fa-solid fa-lock icon"></i>
+                <h1 class="head">Password Generator</h1>
+            </div>
+            <input  class="input-box" type="text" />
+            <label for="rangeInput">Select a value: <span id="rangeValue">6</span></label>
+            <input type="range" id="rangeInput" min="1" max="12" value="6" />
+            <div class="filter">
+                <label for="upperCase">Include Uppercase</label>
+                <input id="upperCase" type="checkbox">
+            </div>
+            <div class="filter">
+                <label for="number">Include Number</label>
+                <input id="number" type="checkbox">
+            </div>
+            <div class="filter">
+                <label for="symbol">Include Symbols</label>
+                <input id="symbol" type="checkbox">
+            </div>
+        </div>
+        <div class="button-con">
+            <button class="button">Generate Password</button>
+        </div>
+    </div>
+</body>
+
+</html>
